@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -20,7 +22,8 @@ public class XMLConverter {
 	 */
 	public static void main(String[] args) throws XMLStreamException, IOException {
 		InputStream input = XMLConverter.class.getResourceAsStream("input.xml");
-		OutputStream output = System.out;
+		File file = new File("output.json");
+		OutputStream output = new FileOutputStream(file);
 		/*
 		 * If we want to insert JSON array boundaries for multiple elements,
 		 * we need to set the <code>autoArray</code> property.
