@@ -3,6 +3,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Scanner;
 
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLEventWriter;
@@ -20,9 +21,22 @@ public class XMLConverter {
 	 * @throws XMLStreamException
 	 * @throws IOException
 	 */
-	public static void main(String[] args) throws XMLStreamException, IOException {
-		InputStream input = XMLConverter.class.getResourceAsStream("input.xml");
+	public static void main(String[] args) throws XMLStreamException, IOException,NoClassDefFoundError {
+		System.out.print("Input filename :");
+		Scanner scanner = new Scanner(System.in);
+		String path = scanner.next();
+		InputStream input = XMLConverter.class.getResourceAsStream(path);
+		if(input==null) { 
+			System.out.println("fail filename or path");
+			return;
+			}
 		File file = new File("output.json");
+		int num=0;
+		while(file.exists()) {
+			num++;
+			file =new File("output"+num+".json");
+		}
+		System.out.println(file);
 		OutputStream output = new FileOutputStream(file);
 		/*
 		 * If we want to insert JSON array boundaries for multiple elements,

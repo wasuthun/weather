@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <current>
-  <city id="2643741" name="City of London">
+  <city id="2643741" name="City of Londons">
     <coord lon="-0.09" lat="51.51" />
     <country>GB</country>
     <sun rise="2015-06-30T03:46:57" set="2015-06-30T20:21:12" />
