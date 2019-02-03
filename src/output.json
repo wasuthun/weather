@@ -1,0 +1,60 @@
+{
+	"current" : {
+		"city" : {
+			"@name" : "City of London",
+			"@id" : "2643741",
+			"coord" : {
+				"@lon" : "-0.09",
+				"@lat" : "51.51"
+			},
+			"country" : "GB",
+			"sun" : {
+				"@set" : "2015-06-30T20:21:12",
+				"@rise" : "2015-06-30T03:46:57"
+			}
+		},
+		"temperature" : {
+			"@unit" : "fahrenheit",
+			"@min" : "66.2",
+			"@max" : "79.88",
+			"@value" : "72.34"
+		},
+		"humidity" : {
+			"@unit" : "%",
+			"@value" : "43"
+		},
+		"pressure" : {
+			"@unit" : "hPa",
+			"@value" : "1020"
+		},
+		"wind" : {
+			"speed" : {
+				"@name" : "Moderate breeze",
+				"@value" : "7.78"
+			},
+			"direction" : {
+				"@code" : "SE",
+				"@name" : "SouthEast",
+				"@value" : "140"
+			}
+		},
+		"clouds" : {
+			"@name" : "clear sky",
+			"@value" : "0"
+		},
+		"visibility" : {
+			"@value" : "10000"
+		},
+		"precipitation" : {
+			"@mode" : "no"
+		},
+		"weather" : {
+			"@number" : "800",
+			"@icon" : "01d",
+			"@value" : "Sky is Clear"
+		},
+		"lastupdate" : {
+			"@value" : "2015-06-30T08:36:14"
+		}
+	}
+}
